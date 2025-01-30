@@ -30,11 +30,13 @@ cd cl-opengl-triangle-example
 ./make.sh
 python3 -m http.server # or other local http server
 # load http://localhost:8000/hello.html
+```
 
 ## Quicklisp
 
-This example shows copying in your quicklisp directory wholesale, bundling it, loading asdf and
-quicklisp, and then quickloading a simple library (in this case Alexandra.)
+This example shows copying in your quicklisp directory wholesale,
+bundling it, loading asdf and quicklisp, and then quickloading a
+simple library (in this case Alexandra.)
 
 ```sh
 cd quicklisp-asdf-example
