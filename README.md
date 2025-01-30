@@ -15,7 +15,21 @@ for me).
 Addtionally, so these are turn key examples I'm including `libecl.a`, `libeclgc.a`, and
 `libeclgmp.a`. Ideally you would bring these in from your own webassembly target build of ECL.
 
-## OpenGL / SDL
+*TODO* Currently the make.sh files have a hardcoded include to the ecl headers, fix that.
+
+## OpenGL / Hello Triangle cl-opengl
+
+This example shows using the cl-opengl API to create a modern shader based triangle.
+Due to some perhaps temporary (or long term) limitations, we can't quickload the actual
+cl-opengl library.  This is then also an example of implementing lisp functions  from C/C++,
+albiet in a fairly haphazard function. Here we've stubbed out and implemented just enough
+cl-opengl functions and vars to make this triangle.
+
+```sh
+cd cl-opengl-triangle-example
+./make.sh
+python3 -m http.server # or other local http server
+# load http://localhost:8000/hello.html
 
 ## Quicklisp
 
